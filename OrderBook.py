@@ -11,7 +11,7 @@ class Task:
             self.id = Task.ids.pop(0)
             
     def __str__(self) -> str:
-        return f"{self.id}: {self.description} ({self.workload} hours), programmer {self.programmer} {self.completed_check}"
+        return f"task ID: {self.id}, description: {self.description}, workload: ({self.workload} hours), programmer: {self.programmer}, task status: {self.completed_check}"
     
     def is_finished(self):
         if self.completed_check == "NOT FINISHED":
